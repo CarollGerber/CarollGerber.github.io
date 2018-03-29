@@ -1,0 +1,1627 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+ 
+body {
+  background-color: white;
+  font-family: roboto;
+  font-style: normal;
+  padding: 0 0 0 0;
+  font-size: 16px;
+  margin: 0;
+  color: #000000;
+}
+.home {
+  background: url("image/home.png") no-repeat scroll center 0 transparent;
+  height: 173px;
+}
+p {
+  padding-bottom: 0;
+}
+.container {
+  width: 965px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.banner_top {  
+  background: url("image/top_banner.png")  /*url("http://share.ooo-modern.ru/share/top_banner.png")*/ no-repeat scroll center 0 transparent;
+  background-size: auto;
+  padding-top: 25px;
+}
+
+
+.banner_top_content {
+  margin-bottom: 50px;
+}
+h2, .faqs h3 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+h2 strong, h3 strong {
+  color: #FFC447;
+  font-size: 24px;
+}
+.banner_top_content p {
+  line-height: 24px;
+}
+.top_banner_text {
+  width: 415px;
+}
+
+.card_comparison, .research {
+  border-top: 5px solid #FFC447;
+  border-radius: 5px;
+  border-left: 1px solid #d8d4d4;
+  border-right: 1px solid #d8d4d4;
+  border-bottom: 1px solid #d8d4d4;
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 25px;
+  float: left;
+
+}
+table {
+  border-collapse: collapse;
+}
+
+.card_image {
+  width: 250px;
+  border-radius: 10px; 
+}
+.card_comparison_vs {
+  position: relative;
+  width: 50px;
+  bottom:100px;
+  left: 530px;
+  width: 35px;
+  text-align: center;
+  padding: 20px 15px;
+  border: 3px solid #FFC447;
+  border-radius: 45px;
+  font-size: 18px;
+  background: #fff;
+  color: #FFC447;
+  -webkit-user-select: none; /* для Chrome*/
+  -moz-user-select: none; /* для Firefox */
+  -ms-user-select: none; /* для IE 10+ */
+  user-select: none; 
+}
+
+.column {
+  padding-top:10px;  
+  text-align: center;
+  width: 390px;
+}
+.card_name {
+
+}
+.button_apply {
+  padding-bottom: 10px;
+}
+.button_apply a{
+  padding: 10px 50px;
+  text-decoration: none;
+  background: #FF634E;
+  color: #ffffff;
+  text-decoration: none;
+  background: #FF634E;
+  color: #ffffff;
+  border-bottom: 3px solid #f7523c; 
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+.card_comparison_star {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.credit_history {
+  display: block;
+  margin: 0px 0 10px 0;
+}
+
+#popup {
+  display: none;
+  background-color:#000000;
+  opacity:0.7;
+  width:100%;
+  height:100%;
+  z-index:9998;
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+.change {
+  display: inline-block;
+  width: 100px;
+  background: url("image/icon_7.png") no-repeat;
+  background-size: contain;
+  color:#000000;
+  padding:1px 40px;
+  cursor:pointer;
+  font-weight:300;
+  font-family:'Roboto';
+  padding: 0;
+  padding-left: 40px;
+}
+.popup_window {
+  width: 637px;
+  height: 740px;
+  z-index:9999;
+  position:fixed;
+  top:50px;
+  left: 50%;
+  margin-left: -230px;;
+  text-align:center;
+  display:none;
+  background-color:#ffffff;
+  color:#97BF0D;
+  font-style:normal;
+  font-size:20px;
+  font-weight:300;
+  font-family:'Roboto';
+  border-radius: 10px;
+}
+.popup_head {
+  height: 30px;
+  text-align: center;
+  background: #FFC447;
+  padding: 15px 0px;
+  color: #fff;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+}
+.popup_window_open {
+  text-align:center;
+  padding:0px;
+  background-color:#ECECEC;
+  color:#666666;
+  font-weight:400;
+  font-family:'Roboto';
+  font-size:17px;
+  margin-top:0px;
+  height: 92%;
+
+}
+.popup_card_scroll {
+  overflow: hidden;
+  height: 680px;
+}
+.popup_card_scroll2 {
+  overflow: scroll;
+  height: 680px;
+  margin-right: -25px;
+  margin-bottom: -15px;
+}
+.popup_card_block {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.popup_card_block__selected {
+  background-color: #d6d6d6;
+}
+.popup_card_block:last-child {
+  margin-bottom: 120px;
+}
+.popup_card_title {
+  margin-left: 60px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.popup_card_image {
+  margin-left: 60px;
+  float: left;
+  width: 160px;
+  height: 100px;
+}
+.popup_card_image img {
+  width: 160px;
+  height: 100px;
+  border-radius: 5px;
+}
+.popup_card_description {
+  margin-left: 30px;
+  float: left;
+  width: 340px;
+  height: 100px;
+}
+
+.popup_window_close_x {
+  cursor:pointer;
+  font-weight:400;
+  font-style:normal;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 25px;
+  background: #fff;
+  border: 1px solid #FFC447;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFC447;
+  -webkit-user-select: none; /* для Chrome*/
+  -moz-user-select: none; /* для Firefox */
+  -ms-user-select: none; /* для IE 10+ */
+  user-select: none; 
+}
+.popup_bottom {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  opacity: 0.7;
+  background: #fff;
+}
+.popup_window_close {
+  width: 90px;
+  padding: 10px 50px;
+  text-decoration: none;
+  background: #FF634E;
+  color: #ffffff;
+  border-bottom: 3px solid #f7523c; 
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  cursor:pointer;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 3%   
+}
+
+.column_rowspan, .column_icon {
+  width: 175px;
+  background: #ECECEC;
+  padding-left: 10px;
+}
+.first_row {
+  padding-top: 20px;
+}
+
+.dotted {
+  border-right: 2px dotted #bebdbd;
+}
+
+
+.column_icon, .column_icon2, .column_icon3, .column_icon4 {
+  height: 60px;
+  border-bottom: none;
+}
+
+.column_icon {
+  background: #ECECEC url("image/icon_1.png") no-repeat;
+  background-size: contain;
+  background-position: 0% 100%;
+}
+
+.last_row {
+  text-transform: uppercase;
+  color: #FFC447;
+  font-weight: 500;
+  font-size: 20px;
+  vertical-align: bottom;
+  text-align: left;
+  border-bottom: 2px solid #FFC447;
+  padding-left: 40px;
+}
+.card_description {
+  padding: 15px 40px;
+  border-bottom: 1px solid #bebdbd;
+}
+.column_icon2 {
+  background: #ECECEC url("image/icon_2.png") no-repeat;
+  background-size: contain;
+  background-position: 0% 100%;
+}
+.column_icon3 {
+  background: #ECECEC url("image/icon_3.png") no-repeat;
+  background-size: contain;
+  background-position: 0% 100%;
+
+}
+.column_icon4 {
+  background: #ECECEC url("image/icon_4.png") no-repeat;
+  background-size: contain;
+  background-position: 0% 100%;
+}
+.card_image_bottom {
+  float: left;
+  margin: 10px 0px 15px 25px;
+}
+.card_image_bottom img {
+  width: 70px;
+  border-radius: 5px;
+}
+.button_apply_bottom {
+  float: left;
+  margin: 18px 0 15px 15px;
+}
+.button_apply_bottom a{
+  color: #ffffff;
+  text-decoration: none;
+  background: #FF634E;
+  border-bottom: 3px solid #f7523c;  
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(0,0,0,0.1);
+  text-transform: uppercase; 
+  padding: 10px 40px;
+}
+.cards_block {
+  width: 100%;
+  margin-top: 70px;
+  float: left;
+
+}
+.cards_block img {
+  width: 100px;
+}
+.card_to_compare {
+  float: left;
+  width: 319px;
+  border: 1px solid #d8d4d4;
+}
+.cards_block_subtitle {
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: url("image/background-image2.png") no-repeat;
+  background-size: cover;
+}
+
+.card_group {
+  float: left;
+  width: 130px;
+}
+.card_to_compare_title {
+  text-align: center;
+  height: 100px;
+  padding-top: 20px;
+}
+.card_to_compare_title a {
+  color: #000000;
+}
+.card_to_compare_image {
+  text-align: center;
+
+}
+.card_to_compare_image img {
+  border-radius: 5px;
+}
+.card_to_compare_vs {
+  width: 35px;
+  text-align: center;
+  padding: 7px 0;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  float: left;
+  margin-top:135px;
+}
+.button_compare {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;;
+  float: left;
+  margin: 20px 0 20px 0px;
+  text-align: center;
+}
+.button_compare a {
+  color: #ffffff;
+  background: #FFC447;
+  border-bottom: 2px solid #F5A40C;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.text_block {
+  width: 100%;
+  margin-top: 70px;
+  float: left
+}
+.text_block_title {
+  width: 430px;
+  float: left;
+  height: 150px;
+  margin-top: -10px;
+}
+.text_block_title h2 {
+  line-height: 55px
+}
+.text_block_content {
+  width: 100%;
+  float: left;
+  text-align: justify;
+}
+.text_block_bullets_p strong {
+  color: #DB1111;
+  font-weight: normal;
+}
+.text_block_top_text p {
+  float: left;
+  width: 535px;;
+  line-height: 25px;
+  text-align: justify;
+}
+svg {
+  margin-left: 220px;
+  margin-top: -5px;
+}
+
+.bullet_icon {
+  width: 120px;
+  height: 140px;;
+  float: left;
+  padding-top: 22px;
+  position: relative;
+}
+.bullet_icon_sprite {
+  width: 75px;
+  height: 75px;
+  background-image: url("image/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.sprite1 {
+  background-position: -1px 0;
+}
+.sprite2 {
+  background-position: -1px -86px;
+}
+.sprite3 {
+  background-position: -1px -175px;
+}
+.sprite4 {
+  background-position: -1px -261px;
+}
+.sprite5 {
+  background-position: -1px -349px;
+}
+.text_block_bullets {
+  width: 840px;
+  float: left;
+  line-height: 25px;
+}
+
+.more_cards {
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 40px;
+}
+
+.more_cards_column_first_row {
+  background: #ECECEC url("image/icon_8.png") no-repeat;
+  background-position: 40px;
+  border-right: 2px solid #fff;
+}
+.more_cards_column_first_row strong {
+  display: block;
+  margin: 10px 79px;
+  font-style: italic;  
+}
+
+.more_cards_column {
+  width: 319px;
+  border-right: 2px dotted #bebdbd;
+  text-align: center;
+  padding: 2px 0px;
+}
+.more_cards_column_first_row:last-child, .more_cards_column:last-child {
+  border-right: none;
+}
+
+.more_card_name {
+  color: #000000;
+  margin: 20px auto;
+  display: block;
+  margin-top: 10px;
+}
+.more_card_image img{
+  width: 160px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.more_cards_stars  {
+  width: 130px;
+}
+.more_batton_apply{
+  width: 33%;
+  height: 50px;
+}
+.more_batton_apply a{
+  padding: 5px 30px;
+  text-decoration: none;
+  background: #FF634E;
+  color: #ffffff;
+  border-bottom: 3px solid #f7523c; 
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+.more_cards_colspan {
+  background: #ECECEC;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.more_cards tr:last-child {
+  background: #ECECEC;
+}
+.footnotes {
+  float: left;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666666;
+}
+.bottom_text {
+  float: left;
+  margin-top: 20px;
+  text-align: justify;
+}
+.disclaimer {
+  float: left;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666666;
+  border: 1px solid #b2b2b2;
+  padding: 25px 25px 25px 65px;
+  text-align: justify;
+  background: url("image/icon_9.png") no-repeat;
+  background-position: 15px -2px;
+}
+.disclaimer p {
+  margin-bottom: 0;  
+  margin-top: 0;
+}
+.faqs {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.faqs h3 {
+  margin-bottom: 0;
+}
+.faqs_item {
+  float: left;
+  width: 480px;
+  text-align: justify;
+  background: url("image/icon_10.png") no-repeat;
+  background-position: 0px 30px;
+}
+.question {
+  margin: 30px 40px 10px 80px;
+  color: #DB1111;
+
+}
+.answer {
+  margin: 10px 40px 10px 80px;
+}
+.faqs_link {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.faqs_link a, .research_link a {
+  color: #DB1111;
+}
+
+.research {
+  text-align: center;
+  margin-top: 40px;
+}
+.research h4 {
+  color: #FFC447;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.research_item {
+  width: 321px;
+  float: left;
+  text-align: center;
+}
+.research_title {
+  margin: 10px 28px 0px 28px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  border-bottom: 2px dotted#bebdbd
+}
+.research_description {
+  margin: 10px 28px 0px 28px;
+  text-align: justify;
+  line-height: 22px;
+}
+.research_link {
+  margin: 10px 28px 0px 28px;
+}
+
+.futter {
+  float: left;
+  margin-top: 100px;
+  width: 100%;
+  background: url("image/futter.png") no-repeat scroll center 0 transparent;
+  height: 960px;
+}
+
+.button_apply a:hover, .button_apply_bottom a:hover, .more_batton_apply a:hover{
+  background: #FF714D;
+}
+
+.button_compare a:hover {
+  background: #FFD170;
+}
+
+
+.text_block_bullets_p strong:hover {
+  text-decoration: underline;
+}
+.question:hover, .research_title:hover {
+  text-decoration: underline;
+}
+.faqs_link a:hover, .research_link a:hover{
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 966px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    width: 775px;
+  }
+  .banner_top {
+    background-position: -600px 0px;
+  }
+  .card_comparison_vs {
+    bottom:90px;
+    left: 427px;
+    padding: 9px 4px;
+  }
+
+  .column_rowspan {
+    padding-left:10px;
+  }
+
+  .card_image {
+    width: 200px;
+  }
+  .card_to_compare{ 
+    width: 256px;
+  }
+  .card_group {
+    width: 100px;
+  }
+
+  svg {
+    margin-left: 200px;
+    margin-top: px;
+    width: 74%;
+  }
+  .text_block_title {
+    width: 41%;
+    float: left;
+    height: 170px;
+  }
+  .text_block_title h2 {
+    line-height: 62px;
+    margin-top: 10px;
+  }
+  .text_block_top_text p {
+    line-height: 22px;
+    width: 59%;
+  }
+
+  .bullet_icon {
+    width: 10%;
+  }
+  .text_block_bullets {
+    width: 87%;
+    margin-left: 20px;
+  }
+
+  .more_batton_apply{
+    margin-left: 42px;
+  }
+
+  .more_cards_column {
+    padding: 0px 5px;  
+  }
+
+  .faqs_item {
+    width: 50%;
+  }
+  .research_item {
+    width: 30%;
+    margin-left: 12px;
+    margin-right: 12px;
+
+  }
+  .research_item img {
+    width: 227px;
+    height: 156px;
+  }
+  .research_title {
+    margin: 10px 10px 0px 10px;
+  }
+  .research_description {
+    margin: 10px 10px 0px 10px;
+  }
+  .popup_window {
+    width: 475px;
+    height: 525px;
+    top:140px;
+    left: 50%;
+    margin-left: -230px;;
+    font-size:18px;
+    border-radius: 5px;
+  }
+  .popup_head {
+    height: 25px;
+    padding: 8px 0px;
+    border-top-left-radius: 5px;
+  }
+  .popup_window_open {
+
+  }
+  .popup_card_scroll {
+    overflow: hidden;
+    height: 485px;
+  }
+  .popup_card_scroll2 {
+    height: 500px;
+    margin-right: -15px;
+  }
+  .popup_card_block {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .popup_card_block:last-child {
+    margin-bottom: 90px;
+  }
+  .popup_card_title {
+    margin-left: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  .popup_card_image {
+    margin-left: 30px;
+    float: left;
+    width: 100px;
+    height: 65px;
+  }
+  .popup_card_image img {
+    width: 100px;
+    height: 65px;
+    border-radius: 5px;
+  }
+  .popup_card_description {
+    margin-left: 30px;
+    width: 300px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .popup_window_close_x {
+    font-size:18px;
+    font-style:normal;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .popup_bottom {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    opacity: 0.7;
+    background: #fff;
+  }
+  .popup_window_close {
+    width: 90px;
+    padding: 5px 40px;
+    margin-bottom: 0px;
+    margin-left: -100px;
+    bottom: 15px;   
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+  }
+  .banner_top {
+    background-size: 1204px 288px;
+    background-position: 55% 0px;
+    padding-top: 1px;
+  }
+  .banner_top_content {
+
+    margin-bottom: 0px;
+    padding-left: 20px;
+  }
+  h2, .faqs h3 {
+    font-size: 25px;
+  }
+
+  .card_comparison, .research {
+    line-height: 18px;
+    width: 99%;
+  }
+
+  .card_image {
+    width: 110px;
+    border-radius: 5px; 
+  }
+  .card_comparison_vs {
+    bottom:70px;
+    left: 304%;
+    width: 20px;
+    padding: 10px 10px;
+    border: 1px solid #FFC447;
+    font-size: 15px;
+  }
+  .card_comparison_star {
+    width: 100px;
+  }
+
+  .button_apply a {
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .change {
+    width: 80px;
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  .column {
+    width: 40%;
+  }
+  .dotted {
+    border-right: 1px dotted #bebdbd;
+  }
+
+  .column_icon, .column_icon2, .column_icon3, .column_icon4 {
+    height: 70px;
+    border-bottom: none;
+  }
+
+  .column_icon {
+    background: #ECECEC url("image/icon_1.png") no-repeat;
+    background-size: 150px 50px;
+    background-position: 0% 100%;
+  }
+
+  .last_row {
+    font-size: 18px;
+    border-bottom: 1rm solid #FFC447;
+    padding-left: 40px;
+  }
+  .column_icon2 {
+    background-size: 150px 40px;
+  }
+  .column_icon3 {
+    background-size: 150px 40px;
+  }
+  .column_icon4 {
+    background-size: 150px 40px;
+  }
+  .card_image_bottom {
+    margin: 10px 0 15px 15px;
+  }
+
+  .button_apply_bottom {
+    width: 117px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .button_apply_bottom a {
+    padding: 8px 20px;
+  }
+  .card_to_compare {
+    width: 32.9%;
+  }
+
+
+  .card_group {
+    float: none;
+    width: 100%;
+  }
+  .card_to_compare_title {
+    height: 70px;
+    width: 90%;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 5%
+  }
+  .card_to_compare_title a {
+    vertical-align: middle;
+  }
+
+  .card_to_compare_vs {
+    width: 35px;
+    padding: 8px 0;
+    float: none;
+    margin-top:15px;
+    margin-left: 43%;
+  }
+  .button_compare {
+    float: left;
+    padding: 5px 0px;
+  }
+  .button_compare a{
+
+  }
+  .text_block {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .text_block_title {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  .text_block_title h2 {
+    line-height: 35px
+  }
+
+  .text_block_top_text p {
+    width: 95%;
+    padding: 0 2%;
+    line-height: 25px;
+    text-align: justify;
+  }
+  svg {
+    margin-left: 1%;
+    margin-top: -5px;
+    width: 98%;
+  }
+  .text_block_content {
+    width: 100%;
+    float: left;
+    text-align: justify;
+
+  }
+  .bullet_icon {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    margin: 2%;
+  }
+  .bullet_icon_sprite {
+    width: 60px;
+    height: 60px;
+    background-image: url("image/sprite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sprite1 {
+    background-position: 0px 0;
+  }
+  .sprite2 {
+    background-position: -1px -60px;
+  }
+  .sprite3 {
+    background-position: -1px -125px;
+  }
+  .sprite4 {
+    background-position: -1px -190px;
+  }
+  .sprite5 {
+    background-position: -1px -255px;
+  }
+  .text_block_bullets {
+    width: 94%;
+    float: none;
+  }
+
+  .text_block_bullets_subtitle {
+    margin-left: 0%;
+    margin-top: 30px;
+
+  }
+  .text_block_bullets_p {
+    margin-top: 0px;
+    float: left;
+  }
+
+  .more_cards_column_first_row {
+    background-position: 50% 0px;
+    border-right: 2px solid #fff;
+  }
+  .more_cards_column_first_row strong {
+    width: 100%;
+    margin: 40px 0 10px 0;
+  }
+
+
+  .more_card_image img{
+    width: 110px;
+    border-radius: 5px;
+  }
+  .more_batton_apply{
+    padding: 5px 10px;
+  }
+
+  .footnotes {
+    margin: 15px 2% 0 2%;
+  }
+  .bottom_text {
+    margin: 20px 2% 0 2%;
+  }
+
+  .faqs {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .faqs_item {
+    width: 100%;
+    margin-bottom: 20px;
+    background-position: 5px 30px;
+  }
+
+  .answer {
+    margin: 10px 40px 10px 80px;
+  }
+
+  .research_item {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .research_title {
+    margin: 10px 28px 0px 28px;
+    font-weight: 500;
+    border-bottom: 2px dotted#bebdbd
+  }
+  .research_description {
+    margin: 20px 28px 0px 28px;
+    text-align: justify;
+    line-height: 22px;
+  }
+  .research_link {
+    margin: 10px 28px 40px 28px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card_image_bottom {
+    margin: 10px 0 15px 5px;
+  }
+  .button_apply_bottom {
+    width: 115px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .button_apply_bottom a {
+    padding: 8px 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h2, .faqs h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h2 strong, h3 strong {
+    color: #FFC447;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .banner_top_content {
+    margin-top: -20px;
+    padding-left: 5px;
+  }
+  .top_banner_text {
+    width: 250px;
+  }
+  .button_apply a{
+    padding: 5px 7px;
+  }
+
+  .card_comparison_vs {
+    bottom:75px;
+    left: 300%;
+  }
+  .card_description {
+    padding: 15px 10px;
+    border-bottom: 1px solid #bebdbd;
+  }
+
+  .last_row {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .column_icon {
+    background-position: 20% 100%;
+  }
+  .column_icon2 {
+    background-position: 20% 100%;
+  }
+  .column_icon3 {
+    background-position: 20% 100%;
+  }
+  .column_icon4 {
+    background-position: 20% 100%;
+  }
+
+  .card_image_bottom {
+    float: none;
+    text-align: center;
+  }
+  .card_image_bottom img {
+    width: 80px;
+  }
+  .button_apply_bottom {
+    float: none;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .button_apply_bottom a{
+    padding: 7px 20px;;
+  }
+  .cards_block img {
+    width: 100px;
+  }
+
+  .card_group {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .card_to_compare_title {
+    text-align: center;
+    height: 70px;
+    width: 90%;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 5%
+  }
+  .card_to_compare_title a {
+    vertical-align: middle;
+  }
+  .card_to_compare {
+    width: 32.8%;
+  }
+  .card_to_compare_vs {
+    padding: 8px 0;
+    margin-top:15px;
+    margin-left: 40%;
+  }
+  .button_compare {
+    float: left;
+    padding: 0px 0px;
+  }
+  .button_compare a{
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+  .text_block {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .text_block_title {
+    height: 120px;
+  }
+
+  .more_cards {
+    width: 99%;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .more_cards_column_first_row {
+    background-position: 50% 5px;
+    border-right: 2px solid #fff;
+  }
+  .more_cards_column_first_row strong {
+    width: 60%;
+    margin: 40px 0 10px 0;
+    padding: 0 30px;
+  }
+
+  .more_cards_column {
+    padding: 3px 10px;
+  }
+
+  .more_card_name {
+    color: #000000;
+    margin: 20px auto;
+    display: block;
+    margin-top: 10px;
+  }
+  .more_card_image img{
+    width: 110px;
+    border-radius: 5px;
+  }
+  .more_cards_stars {
+    width: 100px;
+  }
+
+  .more_batton_apply a {
+    padding: 5px 15px;
+  }
+  .popup_window {
+    width: 88%;
+    height: 526px;
+    top:100px;
+    left: 50%;
+    margin-left: -45%;
+
+  }
+  .popup_head {
+    height: 38px;
+    padding: 8px 60px;
+  }
+
+  .popup_card_block {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+
+  .popup_card_title {
+    margin-left: 30px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .popup_card_image {
+    margin-left: 30px;
+    float: left;
+    width: 100px;
+    height: 65px;
+  }
+  .popup_card_image img {
+    width: 100px;
+    height: 65px;
+    border-radius: 5px;
+  }
+  .popup_card_description {
+    margin-left: 20px;
+    width: 55%;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .popup_window_close_x {
+    font-size:18px;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+  }
+
+  .popup_bottom {
+    bottom: -15px; 
+  }
+  .popup_window_close {
+    bottom: 0px;   
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 13px;
+  }
+  .banner_top {
+    background-size: 950px 240px;
+  }
+  .card_image {
+    width: 70px;
+  }
+  .banner_top h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .banner_top h2 strong{
+    font-size: 20px;
+  }
+  .card_comparison_vs {
+    bottom:80px;
+    left: 310%;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+
+  .button_apply_bottom {
+    float: none;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .button_apply_bottom a{
+    padding: 5px 7px;;
+  }
+  .card_to_compare {
+    width: 49.3%;
+  }
+  .card_to_compare:last-child{
+    display: none;
+  }
+  .cards_block {
+    width: 99%
+  }
+
+  .card_group {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .more_cards_column_first_row {
+    background-position: 50% 5px;
+    border-right: 2px solid #fff;
+    text-align: center;
+  }
+  .more_cards_column_first_row:nth-child(2) {
+    border-right: none;
+  }
+  .more_cards_column_first_row:last-child {
+    display: none;
+  }
+  .more_cards_column_first_row strong {
+    width: 60%;
+    margin: 40px 0 10px 5%;
+    padding: 0 30px;
+  }
+
+  .more_cards_column:nth-child(2) {
+    border-right: none;
+  }
+  .more_cards_column:last-child {
+    display: none;
+  }
+
+  .change {
+    width: 80px;
+    padding: 0;
+    padding-left: 20px;
+  }
+  .popup_head {
+    height: 38px;
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .popup_card_block {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .popup_card_title {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .popup_card_image {
+    margin-left: 10px;
+    float: left;
+    width: 72px;
+    height: 45px;
+  }
+  .popup_card_image img {
+    width: 72px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .popup_card_description {
+    margin-left: 20px;
+    width: 60%;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .popup_window_close_x {
+    font-size:15px;
+    top: -15px;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+    line-height: 11px;
+  }
+
+  .popup_bottom {
+    bottom: -11px; 
+  }
+
+}
+@media screen and (max-width: 440px) {
+  .card_comparison_vs {
+    left: 310%;
+  } 
+}
+@media screen and (max-width: 430px) {
+  .card_comparison_vs {
+    left: 300%;
+  } 
+}
+@media screen and (max-width: 420px) {
+  .card_comparison_vs {
+    left: 290%;
+  } 
+}
+@media screen and (max-width: 400px) {
+  .card_comparison_vs {
+    left: 285%;
+  } 
+}
+@media screen and (max-width: 390px) {
+  .card_comparison_vs {
+    left: 275%;
+  } 
+}
+@media screen and (max-width: 380px) {
+  .card_comparison_vs {
+    left: 265%;
+  } 
+}
+@media screen and (max-width: 370px) {
+  .card_comparison_vs {
+    left: 255%;
+  } 
+}
+@media screen and (max-width: 360px) {
+  .card_comparison_vs {
+    left: 250%;
+  } 
+}
+@media screen and (max-width: 340px) {
+  .card_comparison_vs {
+    left: 230%;
+  } 
+}
+@media screen and (max-width: 330px) {
+  .card_comparison_vs {
+    left: 230%;
+  } 
+
+}
+
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
+  .home {
+    width: 320px;
+  }
+  .banner_top { 
+
+  }
+  .banner_top h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .banner_top h2 strong{
+    font-size: 18px;
+  }
+  .top_banner_text {
+    width: 180px;
+  }
+  .container {
+    width: 320px;
+  }
+  .banner_top {
+    width: 320px;
+  }
+  .card_comparison {
+    width: 319px;
+  }
+  .card_comparison_vs {
+    left: 175px;
+  }
+  .card_image {
+    width: 70px;
+  }
+  .button_apply_bottom a {
+    padding: 5px 7px;
+  }
+  .cards_block {
+    width: 320px;
+  }
+  .card_to_compare {
+    159px;
+  }
+
+  .card_to_compare_title {
+    height: 80px;
+  }
+  .text_block {
+    width: 320px;
+  }
+  .text_block_title {
+    width:  320px;
+  }
+  .popup_window {
+    width: 290px;
+  }
+  .popup_head {
+    padding: 8px 20px;
+  }
+
+  .popup_card_block {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 100px;
+  }
+
+  .popup_card_title {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .popup_card_image {
+    margin-left: 10px;
+    float: left;
+    width: 72px;
+    height: 45px;
+  }
+
+  .popup_card_description {
+    width: 175px;
+    font-size: 12px;
+    margin-left: 10px;
+
+  }
+
+  .popup_window_close_x {
+    font-size:15px;
+    top: -15px;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+    line-height: 11px;
+  }
+
+  .popup_bottom {
+    bottom: -11px; 
+  }
+}

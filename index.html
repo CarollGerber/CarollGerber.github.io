@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="banner_top" id="top">
+      <div class="container clearfix">
+        <div class="banner_top_content clearfix">
+          <h2>Compare credit cards<br>
+            <strong>To choose the best one</strong>
+          </h2>
+          <p class="top_banner_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+          </p>
+        </div>
+        <div class="container">    
+          <div class="card_comparison clearfix">
+            <table>
+              <tr class="first_row">
+                <td class="column_rowspan"></td>
+                <td class="column dotted"><div id="cardTitle_left" class="card_name"></div></td>
+                <td class="column"><div id="cardTitle_right" class="card_name"></div></td>
+              </tr>
+              <tr class="first_row">
+                <td rowspan="5" class="column_rowspan"><div class="card_comparison_vs">VS</div></td>
+                <td class="column dotted"><img alt="card_name" id="cardImage_left" src="" class="card_image">
+                </td>
+                <td class="column"><img alt="card_name" id="cardImage_right" src="" class="card_image"></td>
+              </tr>
+              <tr class="first_row">
+                <td class="column dotted"><img alt="card_name" src="image/icon_5.png" class="card_comparison_star"></td>
+                <td class="column"><img alt="card_name" src="image/icon_5.png" class="card_comparison_star"></td>
+              </tr>
+              <tr class="first_row">
+                <td class="column dotted button_apply"><a href="#">Apply Now</a></td>
+                <td class="column button_apply"><a href="#">Apply Now</a></td>
+              </tr>
+              <tr class="first_row">
+                <td class="column dotted"><strong class="credit_history"> for Good / Excellent credit</strong></td>
+                <td class="column"><strong class="credit_history"> for Good / Excellent credit</strong></td>
+              </tr>
+              <tr class="first_row">
+                <td class="column dotted">
+                        <div id="popup" opendiv=""></div>
+                        <div id="changeLeft" iddiv="box_1" class="change">
+                          Change card
+                        </div>
+                        <div id="box_1" class="popup_window">
+                          <div class="popup_head">Please Choose Credit Cards You Want to Compare</div>
+                          <div class="popup_window_open">
+                            <div class="popup_card_scroll">
+                              <div id="cards_container" class="popup_card_scroll2">
+                              </div>
+                            </div>
+                              <div class="popup_window_close_x">X</div>
+                            <div class="popup_bottom">  
+                            </div>
+                            <div id="popup_window_close__compare" class="popup_window_close">Compare
+                            </div>
+
+                          </div>
+                        </div>
+                </td>
+                        <td class="column">
+                          <div id="popup" opendiv=""></div>
+                          <div id="changeRight" iddiv="box_1" class="change">
+                            Change card
+                          </div>
+                          <div id="box_1" class="popup_window">
+                            <div class="popup_head">Please Choose Credit Cards You Want to Compare</div>
+                            <div class="popup_window_open">
+                              <div class="popup_card_scroll">
+                                <br>Credit card
+                                <br><br>
+                                <div class="popup_window_close_x">X</div>
+                                <div class="popup_bottom">  
+                                </div>
+                                <div class="popup_window_close">Compare</div>
+                              </div>
+                            </div>
+                          </div></td>
+              </tr>
+              <tr class="first_row">
+                <td class="column_icon"></td>
+                <td class="last_row dotted">Rewards</td>
+                <td class="last_row"></td>
+              </tr>
+              <tr>
+                <td class="column_rowspan">Rewards Type:</td>
+                <td class="card_description dotted">Miles</td>
+                <td class="card_description">Miles</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Bonus Offer:</td>
+                <td class="card_description dotted">Enjoy 40,000 bonus miles after you spend $3,000 on purchases in the first 90 days</td>
+                <td class="card_description">Earn 30,000 Bonus Miles after you spend $1,000 or more in purchases with your new Card within the first 3 months.</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Max Rewards per $1:</td>
+                <td class="card_description dotted">Enjoy 40,000 bonus miles after you spend $3,000 on purchases in the first 90 days</td>
+                <td class="card_description">Earn 30,000 Bonus Miles after you spend $1,000 or more in purchases with your new Card within the first 3 months.</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan"></td>
+                <td colspan="2" class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</td>
+              </tr>
+              <tr class="first_row">
+                <td class="column_icon2"></td>
+                <td class="last_row dotted">Purchases</td>
+                <td class="last_row"></td>
+              </tr>
+              <tr>
+                <td class="column_rowspan">Introductory APR:</td>
+                <td class="card_description dotted">N/A</td>
+                <td class="card_description">N/A</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Ongoing APR:</td>
+                <td class="card_description dotted">16.99%, 20.99% or 23.99% Variable</td>
+                <td class="card_description">16.99%, 20.99% or 23.99% Variable</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan"></td>
+                <td colspan="2" class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</td>
+              </tr>
+              <tr class="first_row">
+                <td class="column_icon3"></td>
+                <td class="last_row dotted">Balance Transfer</td>
+                <td class="last_row"></td>
+              </tr>
+              <tr>
+                <td class="column_rowspan">Introductory APR:</td>
+                <td class="card_description dotted">N/A</td>
+                <td class="card_description">N/A</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Ongoing APR:</td>
+                <td class="card_description dotted">16.99%, 20.99% or 23.99% Variable</td>
+                <td class="card_description">16.99%, 20.99% or 23.99% Variable</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Balance Transfer Fee:</td>
+                <td class="card_description dotted">$0</td>
+                <td class="card_description">$0</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan"></td>
+                <td colspan="2" class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</td>
+              </tr>
+              <tr class="first_row">
+                <td class="column_icon4"></td>
+                <td class="last_row dotted">Travel Features</td>
+                <td class="last_row"></td>
+              </tr>
+              <tr>
+                <td class="column_rowspan">Foreign Transaction Fees:</td>
+                <td class="card_description dotted">$0</td>
+                <td class="card_description">$0</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Lounge Acess:</td>
+                <td class="card_description dotted">No</td>
+                <td class="card_description">Complimentary Admirals Club® lounge access for authorized users</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan">Travel Statement Credit:</td>
+                <td class="card_description dotted">No</td>
+                <td class="card_description">Complimentary Admirals Club® lounge access for authorized users</td> 
+              </tr>
+              <tr>
+                <td class="column_rowspan"></td>
+                <td colspan="2" class="card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</td>
+              </tr>
+              <tr>
+                <td class="column_rowspan"></td>
+                <td class="dotted">
+                  <div class="card_image_bottom"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID34.png"></div>
+                  <div  class="button_apply_bottom"><a href="#">Apply Now</a></div>
+                </td>
+                <td >
+                  <div class="card_image_bottom"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID36.png"></div>
+                  <div class="button_apply_bottom" ><a href="#">Apply Now</a></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="cards_block clearfix">
+            <div class="cards_block_subtitle"> Other Credit Cards To Compare
+            </div>
+            <div class="card_to_compare">
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Discover it Miles</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID23.png"></div>
+              </div>
+              <div class="card_to_compare_vs">VS.</div>
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Barclaycard Arrival Plus® World Elite Mastercard®</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID34.png"></div>
+              </div>
+              <div class="button_compare"><a href="#">Compare</a>
+              </div>
+            </div>
+            <div class="card_to_compare">
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Discover it Miles</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID23.png"></div>
+              </div>
+              <div class="card_to_compare_vs">VS.</div>
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Barclaycard Arrival Plus® World Elite Mastercard®</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID34.png"></div>
+              </div>
+              <div class="button_compare"><a href="#">Compare</a>
+              </div>
+            </div>
+            <div class="card_to_compare">
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Discover it Miles</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID23.png"></div>
+              </div>
+              <div class="card_to_compare_vs">VS.</div>
+              <div class="card_group">
+                <div class="card_to_compare_title"><a href="#">Barclaycard Arrival Plus® World Elite Mastercard®</a></div>
+                <div class="card_to_compare_image"><img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID34.png"></div>
+              </div>
+              <div class="button_compare"><a href="#">Compare</a>
+              </div>
+            </div>
+          </div>
+          <div class="text_block clearfix">
+            <div class="text_block_title"><h2>How to Choose the Best Credit Cards<br> <strong>in 5 Easy Steps</strong></h2>
+
+            </div>
+            <div class="text_block_top_text clearfix"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient. Nam fermentum, nulla luctus pharetra vulputatefelis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+            </div>
+            <svg width="745" height="20">
+              <line x1="0" y1="10" x2="745" y2="10" stroke="#FFC447" stroke-width="2"/>
+            </svg>
+            <div class="text_block_content">
+              <div class="bullet_icon">
+                <div class="bullet_icon_sprite sprite1">
+                </div>
+
+              </div>
+              <div class="text_block_bullets clearfix">
+                <h3 class="text_block_bullets_subtitle">Rewards Programm</h3>
+                <p class="text_block_bullets_p">Lorem tempor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, <strong>rewards program</strong> consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra ревордная программа justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+              </div>
+            </div>
+            <div class="text_block_content">
+              <div class="bullet_icon">
+                <div class="bullet_icon_sprite sprite2">
+                </div>
+
+              </div>
+              <div class="text_block_bullets clearfix">
+                <h3 class="text_block_bullets_subtitle">The Interest Rate</h3>
+                <p class="text_block_bullets_p">Lorem tempor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra ревордная программа justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+              </div>
+            </div>
+            <div class="text_block_content">
+              <div class="bullet_icon">
+                <div class="bullet_icon_sprite sprite3">
+                </div>
+
+              </div>
+              <div class="text_block_bullets clearfix">
+                <h3 class="text_block_bullets_subtitle">Fees and Penalties</h3>
+                <p class="text_block_bullets_p">Lorem tempor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra ревордная программа justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+              </div>
+            </div>
+            <div class="text_block_content">
+              <div class="bullet_icon">
+                <div class="bullet_icon_sprite sprite4">
+                </div>
+
+              </div>
+              <div class="text_block_bullets clearfix">
+                <h3 class="text_block_bullets_subtitle">Balance Transfer Opportunity</h3>
+                <p class="text_block_bullets_p">Lorem tempor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra ревордная программа justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+              </div>
+            </div>
+            <div class="text_block_content">
+              <div class="bullet_icon">
+                <div class="bullet_icon_sprite sprite5">
+                </div>
+
+              </div>
+              <div class="text_block_bullets clearfix">
+                <h3 class="text_block_bullets_subtitle">Card for Your Lifestyle</h3>
+                <p class="text_block_bullets_p">Lorem tempor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra ревордная программа justo commodo. Proin sodales pulvinar tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="more_cards clearfix"><h2>Looking for Travel Credit Cards?<br>
+
+            <strong>See More Credit Card Offers</strong></h2>
+
+            <div class="card_comparison">
+              <table>
+                <tr>
+                  <td class="more_cards_column_first_row">
+                    <strong>Best for Miles Earnings</strong>
+                  </td>
+                  <td class="more_cards_column_first_row">
+                    <strong>Best for Free Wi-Fi</strong>
+                  </td>
+                  <td class="more_cards_column_first_row">
+                    <strong>Best for Spend Bonus</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">
+                    <a href="#" class="more_card_name">Discover it® Miles</a>
+                  </td>
+                  <td class="more_cards_column">
+                    <a href="#" class="more_card_name">Discover it® - Cashback Match™</a>
+                  </td>
+                  <td class="more_cards_column">
+                    <a href="#" class="more_card_name">Barclaycard Arrival Plus® World Elite Mastercard®</a>
+                  </td>
+                <tr>
+                  <td class="more_cards_column more_card_image">
+                    <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID23.png" class="card_image">
+                  </td>
+                  <td class="more_cards_column more_card_image">
+                    <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID36.png" class="card_image">
+                  </td>
+                  <td class="more_cards_column more_card_image">
+                    <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID34.png" class="card_image">
+                  </td>
+                <tr>
+                  <td class="more_cards_column"><img alt="card_name" src="image/icon_5.png" class="more_cards_stars"></td>
+                  <td class="more_cards_column"><img alt="card_name" src="image/icon_5.png" class="more_cards_stars"></td>
+                  <td class="more_cards_column"><img alt="card_name" src="image/icon_5.png" class="more_cards_stars"></td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column more_batton_apply"><a href="#">Apply Now</a></td>
+                  <td class="more_cards_column more_batton_apply"><a href="#">Apply Now</a></td>
+                  <td class="more_cards_column more_batton_apply"><a href="#">Apply Now</a></td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column"><strong class="credit_history"> for Good / Excellent credit</strong></td>
+                  <td class="more_cards_column"><strong class="credit_history"> for Good / Excellent credit</strong></td>
+                  <td class="more_cards_column"><strong class="credit_history"> for Good / Excellent credit</strong></td>
+                </tr>
+                <tr> 
+                  <td colspan="3" class="more_cards_colspan">Intro APR (on Purch.)</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">0% (14 months)</td>
+                  <td class="more_cards_column">0% (14 months)</td>
+                  <td class="more_cards_column">0% (14 months)</td>
+                </tr>
+                <tr> 
+                  <td colspan="3" class="more_cards_colspan">Regular APR (on Purch.)</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">11.99% - 23.99% Variable</td>
+                  <td class="more_cards_column">11.99% - 23.99% Variable</td>
+                  <td class="more_cards_column">11.99% - 23.99% Variable</td>
+                </tr>
+                <tr> 
+                  <td colspan="3" class="more_cards_colspan">Annual Fee</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">$0</td>
+                  <td class="more_cards_column">$0</td>
+                  <td class="more_cards_column">$0</td>
+                </tr>
+                <tr> 
+                  <td colspan="3" class="more_cards_colspan">Rewards Earned</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">Unlimited 1.5x Miles per dollar on all purchases, every day, with no annual fee.0</td>
+                  <td class="more_cards_column">Unlimited 1.5x Miles per dollar on all purchases, every day, with no annual fee.</td>
+                  <td class="more_cards_column">Unlimited 1.5x Miles per dollar on all purchases, every day, with no annual fee.</td>
+                </tr>
+                <tr> 
+                  <td colspan="3" class="more_cards_colspan">Bonus offer</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column">We'll match all the Miles you've earned at the end of your first year. For example, if you earn 30,000 Miles, you get 60,000 Miles</td>
+                  <td class="more_cards_column">We'll match all the Miles you've earned at the end of your first year. For example, if you earn 30,000 Miles, you get 60,000 Miles</td>
+                  <td class="more_cards_column">We'll match all the Miles you've earned at the end of your first year. For example, if you earn 30,000 Miles, you get 60,000 Miles</td>
+                </tr>
+                <tr>
+                  <td class="more_cards_column more_batton_apply"><a href="#">Apply Now</a></td>
+                  <td class="more_cards_column more_batton_apply"><a href="#" >Apply Now</a></td>
+                  <td class="more_cards_column more_batton_apply"><a href="#">Apply Now</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="footnotes">
+            **The card's rates, fees and other terms are subject to change. Therefore, we do not guarantee that information presented on this page is current and up to date. Please, visit the bank's or credit card company's website to review the current Terms & Conditions.
+          </div>
+          <div class="bottom_text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc egetLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+          </div>
+          <div class="disclaimer">
+            <p><b>Disclaimer:</b> This editorial content is not provided or commissioned by the credit card issuer(s). Opinions expressed here are the author's alone, not those of the credit card issuer(s), and have not been reviewed, approved or otherwise endorsed by the credit card issuer(s). Reasonable efforts are made to present accurate information, however all information is presented without warranty. Consult a card's issuing bank for the terms & conditions.</p>
+            <p>All rates and fees, and other terms and conditions of the products mentioned in this article/post are actual as of the last update date but are subject to change. See the current products' Terms & Conditions on the issuing banks' websites.</p>
+          </div>
+          <div class="faqs">
+            <h3>Users Questions About <br> <strong>These Credit Cards</strong></h3>
+            <div class="faqs_item">
+              <div class="question">I just turned 18 this year and want to start building credit how do I do this?
+              </div>
+              <div class="answer"> There are several options for you. The first one, and probably the easiest one, is to become an authorized user on your parents’ credit card. As an authorized user you will be issued a separate card....
+              </div>
+              <div class="faqs_link"> <a href="#">Read more...</a>
+              </div>
+            </div>
+            <div class="faqs_item">
+              <div class="question">I just turned 18 this year and want to start building credit how do I do this?
+              </div>
+              <div class="answer"> There are several options for you. The first one, and probably the easiest one, is to become an authorized user on your parents’ credit card. As an authorized user you will be issued a separate card....
+              </div>
+              <div class="faqs_link"> <a href="#">Read more...</a>
+              </div>
+            </div>
+            <div class="faqs_item">
+              <div class="question">A lot of my friends use their credit cards for everything even when buying clothes at KingSize and when they have the money, isn’t this a bad habit?..
+              </div>
+              <div class="answer"> A cash back credit card is a card that offers a cash back reward program as an incentive. Essentially, it means that a percentage of the amount spent on purchases is returned to you...
+              </div>
+              <div class="faqs_link"> <a href="#">Read more...</a>
+              </div>
+            </div>
+            <div class="faqs_item">
+              <div class="question">A lot of my friends use their credit cards for everything even when buying clothes at KingSize and when they have the money, isn’t this a bad habit?..
+              </div>
+              <div class="answer"> A cash back credit card is a card that offers a cash back reward program as an incentive. Essentially, it means that a percentage of the amount spent on purchases is returned to you...
+              </div>
+              <div class="faqs_link"> <a href="#">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="research">
+            <h4>Related Research</h4>
+            <div class="research_item">
+              <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID18.png" width="264px" height="183px">
+              <div class="research_title">Go Farther With The Discover It Miles Card</div>
+              <div class="research_description">November and December are the busiest months as gift shopping reaches its peak. People rush around looking for the best gifts and the best deals leaving a lot of money in the shops. Holiday season may force you to go over the household budget.</div>
+              <div class="research_link"><a href="#">Continue to reading...</a></div>
+            </div>
+            <div class="research_item">
+              <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID19.png" width="264px" height="183px">
+              <div class="research_title">Credit Card Tips For Holiday Shopping 2017</div>
+              <div class="research_description">November and December are the busiest months as gift shopping reaches its peak. People rush around looking for the best gifts and the best deals leaving a lot of money in the shops. Holiday season may force you to go over the household budget.</div>
+              <div class="research_link"><a href="#">Continue to reading...</a></div>
+            </div>
+            <div class="research_item">
+              <img alt="card_name" src="image/Compare%20Credit%20Cards_CL_ImgID20.png" width="264px" height="183px">
+              <div class="research_title">How to Earn on Black Friday Deals in 2017</div>
+              <div class="research_description">November and December are the busiest months as gift shopping reaches its peak. People rush around looking for the best gifts and the best deals leaving a lot of money in the shops. Holiday season may force you to go over the household budget.</div>
+              <div class="research_link"><a href="#">Continue to reading...</a></div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+  </body>
+</html>
