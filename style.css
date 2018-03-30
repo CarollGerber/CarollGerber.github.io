@@ -1123,6 +1123,9 @@ svg {
 }
 
 @media screen and (max-width: 550px) {
+ .card_name {
+padding: 0px 15px;
+}
   .card_image_bottom {
     margin: 10px 0 15px 5px;
   }
